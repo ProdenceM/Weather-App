@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Card App</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="weatherApp.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="mb-4">Weather Card App</h1>
+      <div class="form-group">
+        <label for="cityInput">Enter City:</label>
+        <input
+          type="text"
+          id="cityInput"
+          class="form-control"
+          placeholder="Enter city name"
+        />
+      </div>
+      <button id="searchBtn" class="btn btn-primary">Search</button>
+      <button id="locationBtn" class="btn btn-success">Current Location</button>
+      <div id="weatherCard" class="card mt-4" style="display: none">
+        <div class="card-body">
+          <h5 class="card-title" id="cityName"></h5>
+          <p class="card-text" id="temperature"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="weatherApp.js"></script>
+  </body>
+</html>
